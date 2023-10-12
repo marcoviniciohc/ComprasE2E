@@ -7,6 +7,9 @@ Las pruebas están centradas en el sitio web de compras de SAUCEDEMO con los sig
 - Inicio de Sesión
 - Agregar productos al carrito
 - Visualizar el carrito de compras
+- Completar el formulario de compra
+- Finaliza la compra con la confirmación: “THANK YOU FOR YOUR ORDER”
+
 
 ## Pre requisitos para ejecutar 📋
 - Java version "19.0.2" 2023-01-17 o superior y JDK (variables de entorno configuradas).
@@ -17,16 +20,12 @@ Las pruebas están centradas en el sitio web de compras de SAUCEDEMO con los sig
 
 ## Ejecutar pruebas 🔨
 
-La herramienta de compilación de código y administrador de dependencias para este proyecto es **Gradle**, así que pare ejecutar las pruebas use el siguiente comando en la raíz del proyecto.
-
-	gradle clean test aggregate -i
-
-Si desea ejecutar algún Runner especifico puede usar el siguiente comando, por ejemplo para el Login.
+Ejecutar el Runner LoginRunner.
 
     gradle clean test --tests "LoginRunner"
 
 ## Navegador Web 🌐
-Actualmente la automatización ejecuta por defecto con Chrome.
+Actualmente la automatización ejecuta por defecto con Chrome en versiones inferiores a 114.0
 
 ## Obtener el código
 
